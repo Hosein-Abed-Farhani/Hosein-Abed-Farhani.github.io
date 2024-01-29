@@ -501,8 +501,7 @@ footer {
     section {
         margin-top: 100px;
     }
-
-    .l1 {
+   .l1 {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
