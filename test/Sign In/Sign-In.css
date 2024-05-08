@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: rgb(255, 228, 196);
+    background-color: rgb(225 228 249);
     display: flex;
     justify-content: space-between;
     align-items: center;
