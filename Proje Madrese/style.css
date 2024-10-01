@@ -766,6 +766,9 @@ footer {
         width: 100%;
     }
 
+    .container{
+        margin-top: 20px;
+    }
 
     .c2-radif {
         width: 80%;
@@ -784,9 +787,7 @@ footer {
         font-size: 12px;
     }
 
-    #c-c-top {
-        margin-top: 30px;
-    }
+
 }
 
 
@@ -796,7 +797,8 @@ footer {
     }
 
     article {
-        height: 1000px;
+        height: auto;
+        margin-bottom: 100px;
     }
 
     .nav-input {
@@ -813,9 +815,6 @@ footer {
 
 
 @media screen and (max-width: 500px) {
-    article {
-        height: 1150px;
-    }
 
     .ketab {
         margin-left: 5px;
@@ -838,7 +837,7 @@ footer {
     }
 
     #c-c-nav {
-        height: 300px;
+        height: auto;
     }
 
     .nav-option {
