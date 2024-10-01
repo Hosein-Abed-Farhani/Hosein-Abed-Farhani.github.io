@@ -273,7 +273,8 @@ span {
     justify-content: space-evenly;
     align-items: center;
 }
-.nav-input{
+
+.nav-input {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -284,8 +285,12 @@ span {
     padding-right: 10px;
     padding-left: 10px;
     width: 250px;
-    height: 35px;
+    height: 40px;
     margin-right: 15px;
+    border: none;
+    border-bottom: 2px solid #b7b7aa;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .nav-input p {
@@ -301,16 +306,19 @@ span {
     flex-flow: column;
 }
 
-.nav-option{
+.nav-option {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    margin-top: 10px;
 }
 
 #c-c-nav-center select {
     width: 180px;
     height: 35px;
+    border: 1px solid #b7b7aa;
+    border-radius: 5px;
     text-align: center;
 }
 
@@ -320,7 +328,11 @@ span {
 
 #c-c-nav-bottom input {
     width: 180px;
-    height: 35px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #b7b7aa;
+    background: #0072B9;
+    color: #d6d6cb;
 }
 
 #c-c-center {
@@ -673,19 +685,11 @@ footer {
     }
 
     header {
-        height: 150px;
+        height: auto;
     }
 
     .container {
         justify-content: center;
-    }
-}
-
-
-
-@media screen and (max-width: 850px) {
-    header {
-        height: auto;
     }
 }
 
@@ -715,25 +719,35 @@ footer {
     #c-c-nav {
         margin-top: 20px;
     }
-    .article-radif-1 , .article-radif-2{
+
+    .article-radif-1,
+    .article-radif-2 {
         justify-content: center;
         align-items: center;
         flex-flow: column;
         margin: 0;
     }
-    .boxs{
+
+    .boxs {
         width: 80%;
         margin-top: 30px;
     }
-    article{
+
+    article {
         height: 950px;
         justify-content: flex-start;
     }
-    .container{
-        height: 1400px;
-    }
-    footer{
+
+    footer {
         height: 150px;
+    }
+
+    .container {
+        height: auto;
+    }
+
+    .nav-option {
+        justify-content: space-around;
     }
 }
 
@@ -752,9 +766,6 @@ footer {
         width: 100%;
     }
 
-    .container {
-        height: 1900px;
-    }
 
     .c2-radif {
         width: 80%;
@@ -772,7 +783,8 @@ footer {
     .books p {
         font-size: 12px;
     }
-    #c-c-top{
+
+    #c-c-top {
         margin-top: 30px;
     }
 }
@@ -780,45 +792,94 @@ footer {
 
 @media screen and (max-width: 555px) {
     .nav-a {
-        font-size: 12px;
+        font-size: 10px;
     }
-    article{
-        height: 1000px  ;
-    }
-    #c-c-nav{
 
+    article {
+        height: 1000px;
     }
-    .nav-input{
+
+    .nav-input {
         flex-flow: column;
         height: 70px;
         justify-content: space-evenly;
     }
-    .nav-input input{
+
+    .nav-input input {
         width: 170px;
         height: 40px;
     }
 }
 
 
-@media screen and (max-width: 500px){
-    .container{
-        height: 1800px;
-    }
-    article{
+@media screen and (max-width: 500px) {
+    article {
         height: 1150px;
     }
-    .ketab{
+
+    .ketab {
         margin-left: 5px;
         margin-right: 5px;
     }
 }
-@media screen and (max-width: 450px){
-    .container{
-        height: 1650px;
+
+@media screen and (max-width: 450px) {
+    .nav span {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    #c-c-nav-top {
+        flex-flow: column;
+    }
+
+    #c-c-nav-center {
+        margin-top: 20px;
+    }
+
+    #c-c-nav {
+        height: 300px;
+    }
+
+    .nav-option {
+        flex-flow: column;
+    }
+
+    .nav-option select {
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    #c-c-nav-bottom input {
+        width: 250px;
+        margin-top: 15px;
+    }
+
+    #c-c-footer a {
+        font-size: 13px;
+        margin-right: 25px;
+    }
+
+    .ketab p {
+        font-size: 10px;
+    }
+
+    .books p {
+        font-size: 9px;
     }
 }
-@media screen and (max-width: 350px){
-    .container{
-        height: 1500px;
+
+@media screen and (max-width: 350px) {
+    .footer-p p {
+        font-size: 11px;
+    }
+
+    .nav span {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    #c-c-nav {
+        height: 350px;
     }
 }
