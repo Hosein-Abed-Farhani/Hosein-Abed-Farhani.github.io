@@ -11,9 +11,23 @@
 </head>
 
 <body>
-    <div class="header-top">
-        <img src="Png-Font/Logo.png" alt="">
+    <!-- menu -->
+    <div class="menu">
+        <img src="Png-Font/menu.png"onclick="openNav()"></img>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="../home-page/index.html"></a>
+                <a href="../item-page/index.html">محصولات</a>
+                <a href="../about-page/index.html">درباره ما</a>
+                <a href="../call-page/index.html">ارتباط با ما</a>
+                <a href="../login-page/index.html">ورود</a>
+            </div>
+        </div>
+        
     </div>
+
+
     <header>
         <div class="header-right">
             <img src="Png-Font/Logo.png" alt="">
@@ -23,14 +37,17 @@
             <a href="../item-page/index.html">محصولات</a>
             <a href="../about-page/index.html">درباره ما</a>
             <a href="../call-page/index.html">ارتباط با ما</a>
+            <a href="../login-page/index.html">ورود</a>
         </div>
         <div class="header-left">
             <img id="header-img-1" src="Png-Font/Call.png" alt="">
-            <p>061-00000000</p>
+            <p id="phone-number">061-00000000</p>
             <span>|</span>
             <div class="input">
-                <img id="header-img-2" src="Png-Font/Search.png">
-                <input type="search" id="header-search" placeholder="جستجو">
+                <a href="../item-page/index.html">
+                    <img id="header-img-2" src="Png-Font/Search.png">
+                    <p id="search-p"> جستجو کنید</p>
+                </a>
             </div>
         </div>
     </header>
@@ -45,7 +62,8 @@
         <div class="article-p">
             <p>گروه صنعتی عبد موتور در سال ۱۳۷۸ با هدف تولید انواع موتور سیکلت تاسیس شد. در کمتر از 20 سال توانسته‌ایم
                 به سرعت به جایگاهی برتر در صنعت موتور سیکلت ایران دست پیدا کنیم. ماموریت عبد موتور بهبود مستمر کیفیت</p>
-            <p id="footer-p2">محصولات، ارتقای روز افزون خدمات پس از فروش، تولید مطابق با موسسه استاندارد ملی ایران و مشتری مداری است.
+            <p id="footer-p2">محصولات، ارتقای روز افزون خدمات پس از فروش، تولید مطابق با موسسه استاندارد ملی ایران و
+                مشتری مداری است.
             </p>
         </div>
         <div class="article-center">
@@ -106,6 +124,7 @@
             </div>
         </div>
     </footer>
+    <script src="javaScript.js"></script>
 </body>
 
 </html>
