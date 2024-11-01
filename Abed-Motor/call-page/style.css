@@ -13,6 +13,11 @@ a {
     src: url(Png-Font/IRANSans-web.woff);
 }
 
+::selection {
+    background: #cf2e2e;
+    color: white;
+}
+
 
 
 /* mobile menu */
@@ -22,7 +27,7 @@ a {
 }
 
 .menu img {
-    margin-right: 10px;
+    margin-right: 25px;
     margin-top: 10px;
 }
 
