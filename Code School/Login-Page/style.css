@@ -13,13 +13,18 @@ a {
   color: royalblue;
   transition: 300ms ease-out;
 }
-a:hover { 
+a:hover {
   color: rgb(0, 0, 226);
 }
 
 body {
   background: rgb(70, 199, 99);
-  background-image: linear-gradient(to right, rgb(61, 162, 83) , rgb(107, 227, 133) , rgb(63, 167, 86));
+  background-image: linear-gradient(
+    to right,
+    rgb(61, 162, 83),
+    rgb(107, 227, 133),
+    rgb(63, 167, 86)
+  );
 }
 .body {
   display: flex;
@@ -41,7 +46,8 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.right {
+.right,
+.right-2 {
   width: 50%;
   height: 100%;
   border-radius: 20px;
@@ -60,13 +66,18 @@ body {
   font-size: 16px;
 }
 
+.right-2 {
+  display: none;
+  justify-content: space-around;
+}
+
 #sign-span {
   margin-left: 10px;
   margin-right: 5px;
 }
 
 #sign-a {
-  display: inline;
+  cursor: pointer;
 }
 
 .box-login {
@@ -119,11 +130,11 @@ body {
   color: rgb(84, 84, 84);
 }
 
-.bl-center input:focus{
+.bl-center input:focus {
   border-bottom: 1px solid black;
 }
 
-.hrs{
+.hrs {
   width: 80%;
   display: flex;
   align-items: center;
@@ -144,7 +155,7 @@ hr {
   align-items: center;
 }
 
-.google-sign{
+.google-sign {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +172,7 @@ hr {
   transition: 200ms ease-out;
 }
 
-.bl-bottom img:hover{
+.bl-bottom img:hover {
   background: white;
 }
 
@@ -189,44 +200,37 @@ hr {
   border-radius: 20px;
 }
 
-
-
-
-
-
-
-
-
-@media screen and (max-width : 1300px) {
-  .container{
+@media screen and (max-width: 1300px) {
+  .container {
     width: 70%;
   }
 }
 
-@media screen and (max-width : 1100px) {
-  .container{
+@media screen and (max-width: 1100px) {
+  .container {
     width: 80%;
   }
 }
-@media screen and (max-width : 900px) {
-  .container{
+@media screen and (max-width: 900px) {
+  .container {
     width: 90%;
   }
 }
-@media screen and (max-width : 700px) {
-  .container{
+@media screen and (max-width: 700px) {
+  .container {
     width: 85%;
   }
-  .left{
+  .left {
     display: none;
   }
-  .right{
+  .right,
+  .right-2 {
     width: 100%;
   }
 }
 
-@media screen and (max-width : 500px){
-  .container{
+@media screen and (max-width: 500px) {
+  .container {
     width: 90%;
   }
 }
