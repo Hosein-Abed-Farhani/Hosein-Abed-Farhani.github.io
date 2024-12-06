@@ -182,3 +182,76 @@ function back() {
 }
 
 setInterval(next, 3000);
+
+// circle slide
+
+function cir_1() {
+  img_num = 1;
+  document.querySelector("#image-1").style.display = "block";
+  document.querySelector("#image-2").style.display = "none";
+  document.querySelector("#image-3").style.display = "none";
+  document.querySelector("#image-4").style.display = "none";
+  document.querySelector("#image-5").style.display = "none";
+  document.querySelector("#p-slide").innerHTML = "1/5";
+  document.querySelector("#circle-1").style.background = "rgb(70, 199, 99)";
+  document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+}
+function cir_2() {
+  img_num = 2;
+  document.querySelector("#image-1").style.display = "none";
+  document.querySelector("#image-2").style.display = "block";
+  document.querySelector("#image-3").style.display = "none";
+  document.querySelector("#image-4").style.display = "none";
+  document.querySelector("#image-5").style.display = "none";
+  document.querySelector("#p-slide").innerHTML = "2/5";
+  document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-2").style.background = "rgb(70, 199, 99)";
+  document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+}
+function cir_3() {
+  img_num = 3;
+  document.querySelector("#image-1").style.display = "none";
+  document.querySelector("#image-2").style.display = "none";
+  document.querySelector("#image-3").style.display = "block";
+  document.querySelector("#image-4").style.display = "none";
+  document.querySelector("#image-5").style.display = "none";
+  document.querySelector("#p-slide").innerHTML = "3/5";
+  document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-3").style.background = "rgb(70, 199, 99)";
+  document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+}
+function cir_4() {
+  img_num = 4;
+  document.querySelector("#image-1").style.display = "none";
+  document.querySelector("#image-2").style.display = "none";
+  document.querySelector("#image-3").style.display = "none";
+  document.querySelector("#image-4").style.display = "block";
+  document.querySelector("#image-5").style.display = "none";
+  document.querySelector("#p-slide").innerHTML = "4/5";
+  document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-4").style.background = "rgb(70, 199, 99)";
+  document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+}
+function cir_5() {
+  img_num = 5;
+  document.querySelector("#image-1").style.display = "none";
+  document.querySelector("#image-2").style.display = "none";
+  document.querySelector("#image-3").style.display = "none";
+  document.querySelector("#image-4").style.display = "none";
+  document.querySelector("#image-5").style.display = "block";
+  document.querySelector("#p-slide").innerHTML = "5/5";
+  document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-5").style.background = "rgb(70, 199, 99)";
+}
