@@ -14,9 +14,14 @@ a {
   color: #000;
 }
 
-body{
+body {
   background: rgb(220, 220, 220);
   transition: 300ms ease-out;
+}
+
+#top {
+  position: absolute;
+  top: -5;
 }
 
 /* header */
@@ -34,7 +39,9 @@ header {
   padding-top: 5px;
   position: fixed;
   top: 0;
-  box-shadow: 0 2px 8px 0 rgba(70, 199, 98, 0.463), 0 2px 30px 0 rgba(70, 199, 98, 0.463);
+  box-shadow: 0 2px 8px 0 rgba(70, 199, 98, 0.463),
+    0 2px 30px 0 rgba(70, 199, 98, 0.463);
+  z-index: +1;
 }
 
 nav {
@@ -80,7 +87,7 @@ nav {
   border-bottom: 4px solid rgb(70, 199, 99);
 }
 
-.header-content p{
+.header-content p {
   margin-top: 10px;
 }
 
@@ -112,7 +119,7 @@ nav {
   transition: 300ms ease-out;
 }
 
-#login-btn:hover{
+#login-btn:hover {
   box-shadow: 0 2px 2px 0 rgb(70, 199, 99), 0 2px 20px 0 rgb(70, 199, 99);
 }
 
@@ -152,6 +159,111 @@ nav {
   transition: 300ms ease-out;
 }
 
+.slider {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.slide-box {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.images {
+  border-radius: 5px;
+  width: 100%;
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+
+#next,
+#back {
+  width: 60px;
+  position: absolute;
+  top: 42%;
+  height: 60px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: none;
+  font-size: 22px;
+  transition: 300ms ease;
+  cursor: pointer;
+}
+
+#next:hover,
+#back:hover {
+  background: #00000094;
+}
+
+#p-slide {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  color: white;
+}
+
+#next {
+  right: 0;
+}
+
+#back {
+  left: 0;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#image-2,
+#image-3,
+#image-4,
+#image-5 {
+  display: none;
+}
+
+.circles {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  background: rgb(140, 140, 140);
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: 300ms ease;
+  cursor: pointer;
+}
+
+.circle:hover {
+  background: rgb(70, 199, 99);
+}
+
+#circle-1 {
+  background: rgb(70, 199, 99);
+}
+
 .float-btn {
   position: fixed;
   bottom: 30px;
@@ -183,6 +295,7 @@ nav {
   header {
     justify-content: space-between;
     box-shadow: none;
+    margin: 0;
   }
   .header-right {
     width: 50%;
@@ -190,7 +303,6 @@ nav {
   .header-left {
     width: 50%;
     justify-content: flex-end;
-    margin-left: 30px;
   }
   nav {
     width: auto;
@@ -203,13 +315,14 @@ nav {
     background: white;
     overflow-x: scroll;
     overflow-y: none;
-  box-shadow: 0 2px 8px 0 rgba(70, 199, 98, 0.463), 0 2px 30px 0 rgba(70, 199, 98, 0.463);
+    box-shadow: 0 2px 8px 0 rgba(70, 199, 98, 0.463),
+      0 2px 30px 0 rgba(70, 199, 98, 0.463);
   }
 
   nav::-webkit-scrollbar {
     display: none;
-}
-  .header-content{
+  }
+  .header-content {
     min-width: 120px;
   }
   .hc-d {
@@ -220,5 +333,20 @@ nav {
   }
   .hover-bottom {
     margin-bottom: 0px;
+  }
+  .slider {
+    margin-top: 40px;
+  }
+  .slide-box {
+    width: 700px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #next,
+  #back {
+    top: 35%;
   }
 }
