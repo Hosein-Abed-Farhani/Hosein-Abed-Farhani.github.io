@@ -76,6 +76,12 @@ body {
   margin-right: 5px;
 }
 
+#sign-span-2 {
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-top: 1px;
+}
+
 #sign-a {
   cursor: pointer;
 }
