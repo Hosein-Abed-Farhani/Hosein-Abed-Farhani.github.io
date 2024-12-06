@@ -157,6 +157,7 @@ nav {
   position: sticky;
   top: 0px;
   transition: 300ms ease-out;
+    z-index: +2;
 }
 
 .slider {
