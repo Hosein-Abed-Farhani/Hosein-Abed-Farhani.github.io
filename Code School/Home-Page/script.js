@@ -13,9 +13,9 @@ function scroll() {
   document.querySelector(".scroll-bar").style.width = scrolled + "%";
   // float btn for scroll to top
   if (scrolled >= 5) {
-    document.querySelector(".float-btn").style.display = "flex";
+    document.querySelector(".float-btn").style.translate = "0px";
   } else {
-    document.querySelector(".float-btn").style.display = "none";
+    document.querySelector(".float-btn").style.translate = "100px";
   }
 }
 
