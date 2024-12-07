@@ -11,20 +11,40 @@ function scroll() {
     document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.querySelector(".scroll-bar").style.width = scrolled + "%";
+  // float btn for scroll to top
+  if (scrolled >= 5) {
+    document.querySelector(".float-btn").style.display = "flex";
+  } else {
+    document.querySelector(".float-btn").style.display = "none";
+  }
 }
 
 let sc = "10";
 
-// scroll float
-// let myscroll = document.querySelector("html");
-// let Scroll_Top = myscroll.scrollTop;
-// if (Scroll_Top <= 50) {
-//   document.querySelector(".float-btn").style.display = "none";
-// }
-// else{
-//   document.querySelector(".float-btn").style.display = "flex";
-// }
 // image slider
+
+function slide_func() {
+  document.querySelector("#image-1").style.display = "none";
+  document.querySelector("#image-2").style.display = "none";
+  document.querySelector("#image-3").style.display = "none";
+  document.querySelector("#image-4").style.display = "none";
+  document.querySelector("#image-5").style.display = "none";
+  document.querySelector("#circle-1").style.background = "none";
+  document.querySelector("#circle-2").style.background = "none";
+  document.querySelector("#circle-3").style.background = "none";
+  document.querySelector("#circle-4").style.background = "none";
+  document.querySelector("#circle-5").style.background = "none";
+  document.querySelector("#circle-1").style.width = "20%";
+  document.querySelector("#circle-2").style.width = "20%";
+  document.querySelector("#circle-3").style.width = "20%";
+  document.querySelector("#circle-4").style.width = "20%";
+  document.querySelector("#circle-5").style.width = "20%";
+  document.querySelector("#circle-1").style.borderRadus = "50%";
+  document.querySelector("#circle-2").style.borderRadus = "50%";
+  document.querySelector("#circle-3").style.borderRadus = "50%";
+  document.querySelector("#circle-4").style.borderRadus = "50%";
+  document.querySelector("#circle-5").style.borderRadus = "50%";
+}
 
 let img_num = 1;
 function next() {
@@ -34,73 +54,48 @@ function next() {
   }
 
   if (img_num == 1) {
+    slide_func();
     document.querySelector("#image-1").style.display = "block";
-    document.querySelector("#image-2").style.display = "none";
-    document.querySelector("#image-3").style.display = "none";
-    document.querySelector("#image-4").style.display = "none";
-    document.querySelector("#image-5").style.display = "none";
     document.querySelector("#p-slide").innerHTML = "1/5";
     document.querySelector("#circle-1").style.background = "rgb(70, 199, 99)";
-    document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+    document.querySelector("#circle-1").style.width = "50%";
+    document.querySelector("#circle-1").style.borderRadius = "15px";
   }
 
   if (img_num == 2) {
-    document.querySelector("#image-1").style.display = "none";
+    slide_func();
     document.querySelector("#image-2").style.display = "block";
-    document.querySelector("#image-3").style.display = "none";
-    document.querySelector("#image-4").style.display = "none";
-    document.querySelector("#image-5").style.display = "none";
     document.querySelector("#p-slide").innerHTML = "2/5";
-    document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
     document.querySelector("#circle-2").style.background = "rgb(70, 199, 99)";
-    document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+    document.querySelector("#circle-2").style.width = "50%";
+    document.querySelector("#circle-2").style.borderRadius = "15px";
   }
 
   if (img_num == 3) {
-    document.querySelector("#image-1").style.display = "none";
-    document.querySelector("#image-2").style.display = "none";
+    slide_func();
     document.querySelector("#image-3").style.display = "block";
-    document.querySelector("#image-4").style.display = "none";
-    document.querySelector("#image-5").style.display = "none";
     document.querySelector("#p-slide").innerHTML = "3/5";
-    document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
     document.querySelector("#circle-3").style.background = "rgb(70, 199, 99)";
-    document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+    document.querySelector("#circle-3").style.width = "50%";
+    document.querySelector("#circle-3").style.borderRadius = "15px";
   }
 
   if (img_num == 4) {
-    document.querySelector("#image-1").style.display = "none";
-    document.querySelector("#image-2").style.display = "none";
-    document.querySelector("#image-3").style.display = "none";
+    slide_func();
     document.querySelector("#image-4").style.display = "block";
-    document.querySelector("#image-5").style.display = "none";
     document.querySelector("#p-slide").innerHTML = "4/5";
-    document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
     document.querySelector("#circle-4").style.background = "rgb(70, 199, 99)";
-    document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+    document.querySelector("#circle-4").style.width = "50%";
+    document.querySelector("#circle-4").style.borderRadius = "15px";
   }
 
   if (img_num == 5) {
-    document.querySelector("#image-1").style.display = "none";
-    document.querySelector("#image-2").style.display = "none";
-    document.querySelector("#image-3").style.display = "none";
-    document.querySelector("#image-4").style.display = "none";
+    slide_func();
     document.querySelector("#image-5").style.display = "block";
     document.querySelector("#p-slide").innerHTML = "5/5";
-    document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
     document.querySelector("#circle-5").style.background = "rgb(70, 199, 99)";
+    document.querySelector("#circle-5").style.width = "50%";
+    document.querySelector("#circle-5").style.borderRadius = "15px";
   }
 }
 
@@ -111,73 +106,48 @@ function back() {
   }
 
   if (img_num == 1) {
+    slide_func();
     document.querySelector("#image-1").style.display = "block";
-    document.querySelector("#image-2").style.display = "none";
-    document.querySelector("#image-3").style.display = "none";
-    document.querySelector("#image-4").style.display = "none";
-    document.querySelector("#image-5").style.display = "none";
     document.querySelector("#p-slide").innerHTML = "1/5";
     document.querySelector("#circle-1").style.background = "rgb(70, 199, 99)";
-    document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+    document.querySelector("#circle-1").style.width = "50%";
+    document.querySelector("#circle-1").style.borderRadius = "15px";
   }
 
   if (img_num == 2) {
-    document.querySelector("#image-1").style.display = "none";
+    slide_func();
     document.querySelector("#image-2").style.display = "block";
-    document.querySelector("#image-3").style.display = "none";
-    document.querySelector("#image-4").style.display = "none";
-    document.querySelector("#image-5").style.display = "none";
     document.querySelector("#p-slide").innerHTML = "2/5";
-    document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
     document.querySelector("#circle-2").style.background = "rgb(70, 199, 99)";
-    document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+    document.querySelector("#circle-2").style.width = "50%";
+    document.querySelector("#circle-2").style.borderRadius = "15px";
   }
 
   if (img_num == 3) {
-    document.querySelector("#image-1").style.display = "none";
-    document.querySelector("#image-2").style.display = "none";
+    slide_func();
     document.querySelector("#image-3").style.display = "block";
-    document.querySelector("#image-4").style.display = "none";
-    document.querySelector("#image-5").style.display = "none";
     document.querySelector("#p-slide").innerHTML = "3/5";
-    document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
     document.querySelector("#circle-3").style.background = "rgb(70, 199, 99)";
-    document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+    document.querySelector("#circle-3").style.width = "50%";
+    document.querySelector("#circle-3").style.borderRadius = "15px";
   }
 
   if (img_num == 4) {
-    document.querySelector("#image-1").style.display = "none";
-    document.querySelector("#image-2").style.display = "none";
-    document.querySelector("#image-3").style.display = "none";
+    slide_func();
     document.querySelector("#image-4").style.display = "block";
-    document.querySelector("#image-5").style.display = "none";
     document.querySelector("#p-slide").innerHTML = "4/5";
-    document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
     document.querySelector("#circle-4").style.background = "rgb(70, 199, 99)";
-    document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+    document.querySelector("#circle-4").style.width = "50%";
+    document.querySelector("#circle-4").style.borderRadius = "15px";
   }
 
   if (img_num == 5) {
-    document.querySelector("#image-1").style.display = "none";
-    document.querySelector("#image-2").style.display = "none";
-    document.querySelector("#image-3").style.display = "none";
-    document.querySelector("#image-4").style.display = "none";
+    slide_func();
     document.querySelector("#image-5").style.display = "block";
     document.querySelector("#p-slide").innerHTML = "5/5";
-    document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
-    document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
     document.querySelector("#circle-5").style.background = "rgb(70, 199, 99)";
+    document.querySelector("#circle-5").style.width = "50%";
+    document.querySelector("#circle-5").style.borderRadius = "15px";
   }
 }
 
@@ -187,71 +157,46 @@ setInterval(next, 3000);
 
 function cir_1() {
   img_num = 1;
+  slide_func();
   document.querySelector("#image-1").style.display = "block";
-  document.querySelector("#image-2").style.display = "none";
-  document.querySelector("#image-3").style.display = "none";
-  document.querySelector("#image-4").style.display = "none";
-  document.querySelector("#image-5").style.display = "none";
   document.querySelector("#p-slide").innerHTML = "1/5";
   document.querySelector("#circle-1").style.background = "rgb(70, 199, 99)";
-  document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-1").style.width = "50%";
+  document.querySelector("#circle-1").style.borderRadius = "15px";
 }
 function cir_2() {
   img_num = 2;
-  document.querySelector("#image-1").style.display = "none";
+  slide_func();
   document.querySelector("#image-2").style.display = "block";
-  document.querySelector("#image-3").style.display = "none";
-  document.querySelector("#image-4").style.display = "none";
-  document.querySelector("#image-5").style.display = "none";
   document.querySelector("#p-slide").innerHTML = "2/5";
-  document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
   document.querySelector("#circle-2").style.background = "rgb(70, 199, 99)";
-  document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-2").style.width = "50%";
+  document.querySelector("#circle-2").style.borderRadius = "15px";
 }
 function cir_3() {
   img_num = 3;
-  document.querySelector("#image-1").style.display = "none";
-  document.querySelector("#image-2").style.display = "none";
+  slide_func();
   document.querySelector("#image-3").style.display = "block";
-  document.querySelector("#image-4").style.display = "none";
-  document.querySelector("#image-5").style.display = "none";
   document.querySelector("#p-slide").innerHTML = "3/5";
-  document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
   document.querySelector("#circle-3").style.background = "rgb(70, 199, 99)";
-  document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-3").style.width = "50%";
+  document.querySelector("#circle-3").style.borderRadius = "15px";
 }
 function cir_4() {
   img_num = 4;
-  document.querySelector("#image-1").style.display = "none";
-  document.querySelector("#image-2").style.display = "none";
-  document.querySelector("#image-3").style.display = "none";
+  slide_func();
   document.querySelector("#image-4").style.display = "block";
-  document.querySelector("#image-5").style.display = "none";
   document.querySelector("#p-slide").innerHTML = "4/5";
-  document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
   document.querySelector("#circle-4").style.background = "rgb(70, 199, 99)";
-  document.querySelector("#circle-5").style.background = "rgb(140, 140, 140)";
+  document.querySelector("#circle-4").style.width = "50%";
+  document.querySelector("#circle-4").style.borderRadius = "15px";
 }
 function cir_5() {
   img_num = 5;
-  document.querySelector("#image-1").style.display = "none";
-  document.querySelector("#image-2").style.display = "none";
-  document.querySelector("#image-3").style.display = "none";
-  document.querySelector("#image-4").style.display = "none";
+  slide_func();
   document.querySelector("#image-5").style.display = "block";
   document.querySelector("#p-slide").innerHTML = "5/5";
-  document.querySelector("#circle-1").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-2").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-3").style.background = "rgb(140, 140, 140)";
-  document.querySelector("#circle-4").style.background = "rgb(140, 140, 140)";
   document.querySelector("#circle-5").style.background = "rgb(70, 199, 99)";
+  document.querySelector("#circle-5").style.width = "50%";
+  document.querySelector("#circle-5").style.borderRadius = "15px";
 }
