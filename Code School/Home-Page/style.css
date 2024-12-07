@@ -241,16 +241,19 @@ nav {
 }
 
 .circles {
-  width: 100%;
+  width: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 20px;
 }
 .circle {
-  width: 22px;
-  height: 22px;
+  width: 20%;
+  height: 11px;
   border-radius: 100%;
-  background: rgb(140, 140, 140);
+  background: none;
+  border: 1px solid white;
   margin-left: 7px;
   margin-right: 7px;
   transition: 300ms ease;
@@ -263,6 +266,8 @@ nav {
 
 #circle-1 {
   background: rgb(70, 199, 99);
+  width: 50%;
+  border-radius: 15px;
 }
 
 .float-btn {
@@ -274,7 +279,7 @@ nav {
   border-radius: 5px;
   background: rgb(70, 199, 99);
   color: white;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 20px;
@@ -352,11 +357,5 @@ nav {
   }
   .slider {
     padding-bottom: 5px;
-  }
-  .circle {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
   }
 }
