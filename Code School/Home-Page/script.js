@@ -19,7 +19,14 @@ function scroll() {
   }
 }
 
-let sc = "10";
+// GoToTop
+
+function goToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // اسکرول نرم
+  });
+}
 
 // image slider
 
@@ -200,3 +207,15 @@ function cir_5() {
   document.querySelector("#circle-5").style.width = "50%";
   document.querySelector("#circle-5").style.borderRadius = "15px";
 }
+
+// arrow animation
+function arrow() {
+  document.querySelector("#arrow-top").style.animation =
+    "arrow 800ms ease-in-out";
+  setTimeout(arrow_off, 1000);
+}
+function arrow_off() {
+  document.querySelector("#arrow-top").style.animation = "none";
+}
+
+setInterval(arrow, 3000);
