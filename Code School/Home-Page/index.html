@@ -7,13 +7,16 @@
     <title>Home-Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/davani.jpeg">
 </head>
 
 <body>
-    <div id="top"></div>
+
+    <!-- header start -->
+
     <header id="header">
         <div class="header-right">
-            <img id="logo" src="image/Logo.png" alt="Logo">
+            <img id="logo" src="image/davani.jpeg" alt="Logo">
         </div>
         <div class="header-center">
             <a id="hc_1" class="header-content" href="">
@@ -41,24 +44,39 @@
             <a id="search-icon" href=""><i class="fa fa-search" aria-hidden="true"></i></a>
         </div>
     </header>
+
+    <!-- header end -->
+
+    <!-- scroll-bar start -->
+
     <div class="scroll-bar"></div>
+
+    <!-- scroll-bar end -->
+
+    <!-- navbar start  -->
+
     <nav id="nav">
-        <a id="hc_1" class="header-content" href="">
+        <a id="hc_1" class="header-content" href="../Home-Page/index.html">
             <p>خانه</p>
         </a>
-        <a id="hc_5" class="header-content" href="">
+        <a id="hc_5" class="header-content" href="../Learn-Page/index.html">
             <p>آموزش ها</p>
         </a>
-        <a id="hc_2" class="header-content" href="">
+        <a id="hc_2" class="header-content" href="../Exam-Page/index.html">
             <p>آزمون ها</p>
         </a>
-        <a id="hc_3" class="header-content" href="">
+        <a id="hc_3" class="header-content" href="../Info-Page/index.html">
             <p>درباره ما</p>
         </a>
-        <a id="hc_4" class="header-content" href="">
+        <a id="hc_4" class="header-content" href="../Contact-Page/index.html">
             <p>ارتباط با ما</p>
         </a>
     </nav>
+
+    <!-- navbar end -->
+
+    <!-- content start -->
+
     <div class="slider" id="slider">
         <div class="slide-box">
             <a id="image-1" href="">
@@ -90,14 +108,46 @@
     </div>
     <div class="bd" style="height: 1000px;"></div>
 
+    <!-- content end -->
 
+    <!-- float btn ( Back to top ) start -->
 
-    <a href="#top" class="float-btn"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    <a onclick="goToTop()" class="float-btn"><i id="arrow-top" class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+    <!-- float btn ( Back to top ) end  -->
+
+    <!-- footer start -->
+    <div class="footer-mos">
+        <div class="footer-top-mos"></div>
+        <div class="footer-bottom-mos"></div>
+    </div>
     <footer>
-
-
-
+        <div class="t-footer">
+            <img id="footer-icon" src="image/davani.jpeg" alt="">
+            <p id="ft-p-1">هدف ما افزایش کیفیت آموزش و تحصیل است</p>
+            <div id="ft-line-2">
+                <p id="ft-dash">-</p>
+                <p id="ft-p-2">مالکیت مادی و معنوی این سایت متعلق به هنرستان هیات امنای علامه دوانی می باشد.</p>
+            </div>
+        </div>
+        <div class="c-footer">
+            <div class="cf-links">
+                <a id="cf-first-a" href="../Learn-Page/index.html">آموزش ها</a>
+                <a href="../Info-Page/index.html">درباره ما</a>
+                <a href="../Contact-Page/index.html">تماس با ما</a>
+            </div>
+            <div class="cf-img">
+                <i class="fa fa-telegram" aria-hidden="true" title="تلگرام هنرستان"></i>
+                <i class="fa fa-phone" aria-hidden="true" title="شماره تلفن هنرستان"></i>
+                <i id="cf-last-img" class="fa fa-instagram" aria-hidden="true" title="اینستاگرام هنرستان"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="f-footer">
+            <p>خوزستان ، آبادان ، بلوار شهدا کارکوب زاده ، کوی بهار ، ایستگاه 10 </p>
+        </div>
     </footer>
+    <!-- footer end -->
 
     <script src="script.js"></script>
 </body>
