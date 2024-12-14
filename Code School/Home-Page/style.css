@@ -618,6 +618,6 @@ footer hr {
     clip-path: polygon(100% 30px, 100% 101%, 0 100%);
   }
   #ft-dash {
-    margin-left: 0;
+    display: none;
   }
 }
